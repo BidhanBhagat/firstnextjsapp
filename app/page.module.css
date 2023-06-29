@@ -1,0 +1,41 @@
+.container{
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+.item{
+  flex: 1;
+}
+.title{
+  font-size: 50px;
+}
+.desc{
+  font-size: 15px;
+  padding-top: 10px;
+}
+.btn{
+  border: none;
+  cursor: pointer;
+  background-color: #53c28b;
+  margin: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  border-radius: 10px;
+}
+.img{
+
+  object-fit: contain;
+  animation: move 3s ease alternate;
+}
+@keyframes move {
+  from{
+      transform: translateY(-15px);
+  }
+  to{
+      transform: translateY(0px) scale(1.03);
+  }
+}
+

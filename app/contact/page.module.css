@@ -1,0 +1,52 @@
+.content{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.imgContainer{
+    flex: 1;
+    height: 450px;
+    position: relative;
+}
+.form{
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+}
+.input,.textarea{
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* border: 0.5px solid #53c28b; */
+    box-shadow: 1px 0px 4px #53c28b ;
+}
+.title{
+    text-align: center;
+    color: #53c28b;
+    margin: 50px;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+.image{
+    object-fit: contain;
+    animation: move 3s ease alternate;
+}
+@keyframes move {
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(0px) scale(1.03);
+    }
+}
+.btn{
+    padding: 10px 10px;
+    background-color: #53c28b;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
